@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import ListItem from "../ListItem/ListItem";
 
-const TodosList = ({ items,  handleDelete }) => {
+const ContactsList = ({ items, handleDelete }) => {
   return (
     <ul>
       {items.map((item) => (
@@ -15,10 +15,10 @@ const TodosList = ({ items,  handleDelete }) => {
   );
 };
 
-TodosList.propTypes = {
+ContactsList.propTypes = {
   items: PropTypes.arrayOf(PropTypes.shape({ id: PropTypes.string.isRequired }))
     .isRequired,
   handleDelete: PropTypes.func.isRequired,
 };
 
-export default TodosList;
+export default ContactsList;

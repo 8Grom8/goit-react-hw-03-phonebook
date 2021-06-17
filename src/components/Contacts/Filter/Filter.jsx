@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const TodosFilter = ({ handleChange, filter }) => {
+const Filter = ({ handleChange, filter }) => {
   return (
     <div className="filterStyle">
       <label htmlFor="filter">Find contacts by name</label>
@@ -16,9 +16,9 @@ const TodosFilter = ({ handleChange, filter }) => {
   );
 };
 
-TodosFilter.propTypes = {
+Filter.propTypes = {
   handleChange: PropTypes.func.isRequired,
   filter: PropTypes.string.isRequired,
 };
 
-export default TodosFilter;
+export default Filter;

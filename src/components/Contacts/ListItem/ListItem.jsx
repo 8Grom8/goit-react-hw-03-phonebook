@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const TodosListItem = ({ item, handleDelete }) => {
+const ListItem = ({ item, handleDelete }) => {
   const {  name, number } = item;
 
   return (
@@ -13,7 +13,7 @@ const TodosListItem = ({ item, handleDelete }) => {
   );
 };
 
-TodosListItem.propTypes = {
+ListItem.propTypes = {
   item: PropTypes.shape({
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
@@ -22,4 +22,4 @@ TodosListItem.propTypes = {
   handleDelete: PropTypes.func.isRequired,
 };
 
-export default TodosListItem;
+export default ListItem;
